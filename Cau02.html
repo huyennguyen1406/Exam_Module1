@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    function FindIndex(index,arr){
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] === index){
+                return i;
+            }
+        }
+        return false
+    }
+    arr = [2, 5, 8, 9, 10];
+    let num = parseInt(prompt("Nhập vào số bạn cần tìm: "))
+    let checkNum = FindIndex(num, arr);
+    if(checkNum === false){
+        alert("Phần tử không nằm trong mảng")
+    }
+    else{
+        alert("Phần tử nằm ở vị trí thứ " + (checkNum + 1) + " trong mảng")
+    }
+
+</script>
+</body>
+</html>
